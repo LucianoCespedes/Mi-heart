@@ -11,13 +11,25 @@
     
     
 
-    <div class="marco" >
+     <div class="marco" >
         <div class="heart"></div>
-        <audio class="audio" controls autoplay muted >
-            <source src="Gustavo Cerati - Tu Locura (Official Visualizer).mp3" type="audio/mp3">
-            <source src="Gustavo-Cerati-Tu-Locura-_Official-Visualizer_.ogg" type="audio/ogg">
-        </audio>   
+        <button id="boton1" class="boton">♦</button>
+        <audio id="musica" src="Gustavo Cerati - Tu Locura (Official Visualizer).mp3"></audio>
     </div>
+    <script>
+        const button1= document.getElementById('boton1')
+        const sound =document.getElementById('musica')
+
+
+        button1.addEventListener('click',() =>{
+            sound.ariaCurrent=0;
+            sound.play();
+
+        })
+
+
+
+    </script>
     
 </body>
 </html>
